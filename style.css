@@ -122,6 +122,33 @@ main {
 .newsletter__img--mobile {
   display: none;
 }
+.success {
+  background-color: var(--white);
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 64px;
+  max-width: 504px;
+}
+.success__title {
+  font-size: var(--fs-56);
+  font-weight: var(--fw-700);
+}
+.success__btn {
+  background-color: var(--blue-800);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  font-weight: var(--fw-700);
+  padding: 16px;
+  width: 100%;
+}
+.success__btn:hover {
+  background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+  cursor: pointer;
+}
 .hidden {
   display: none;
 }
