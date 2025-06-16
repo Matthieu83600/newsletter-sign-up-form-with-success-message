@@ -15,7 +15,9 @@
   --white: hsl(0, 0%, 100%);
   /* Font */
   --font-family: "Roboto", sans-serif;
+  --fs-12: 12px;
   --fs-16: 16px;
+  --fs-56: 56px;
   --fw-400: 400;
   --fw-700: 700;
 }
@@ -24,11 +26,104 @@ body {
   font-size: var(--fs-16);
   font-weight: var(--fw-400);
   background-color: var(--blue-800);
+  color: var(--blue-800);
 }
 main {
   display: grid;
   place-items: center;
   min-height: 100vh;
+}
+.newsletter {
+  background-color: var(--white);
+  border-radius: 36px;
+  display: flex;
+  gap: 64px;
+  padding: 32px;
+}
+.newsletter__form {
+  margin-block: 71.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.newsletter__form-title {
+  font-size: var(--fs-56);
+  font-weight: var(--fw-700);
+}
+.newsletter__form-desc {
+  line-height: 150%;
+}
+.newsletter__form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.list__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.list__item p {
+  line-height: 150%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__email {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.form__email label {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-700);
+}
+.form__error-msg {
+  color: var(--red);
+  font-size: var(--fs-12);
+  display: none;
+}
+.form__input {
+  border-radius: 8px;
+  border: 1px solid var(--grey);
+  color: var(--grey);
+  line-height: 150%;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+}
+.form__input:focus {
+  outline: none;
+  border: 1px solid var(--blue-800);
+  color: var(--blue-800);
+}
+.form__input--error:focus {
+  outline: none;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+.form__submit {
+  background-color: var(--blue-800);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  font-weight: var(--fw-700);
+  padding: 16px;
+}
+.form__submit:hover {
+  background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+  cursor: pointer;
+}
+.newsletter__img {
+  border-radius: 32px;
+  overflow: hidden;
+}
+.newsletter__img--mobile {
+  display: none;
+}
+.hidden {
+  display: none;
 }
 .attribution {
   font-size: 12px;

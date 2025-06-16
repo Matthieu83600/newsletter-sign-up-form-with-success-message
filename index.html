@@ -24,23 +24,25 @@
           <h1 class="newsletter__form-title">Stay updated!</h1>
           <p class="newsletter__form-desc">Join 60,000+ product managers receiving monthly updates on:</p>
           <ul class="newsletter__form-list">
-            <li>
+            <li class="list__item">
               <img src="./assets/images/icon-list.svg" alt="icon list" />
               <p>Product discovery and building what matters</p>
             </li>
-            <li>
+            <li class="list__item">
               <img src="./assets/images/icon-list.svg" alt="icon list" />
               <p>Measuring to ensure updates are a success</p>
             </li>
-            <li>
+            <li class="list__item">
               <img src="./assets/images/icon-list.svg" alt="icon list" />
               <p>And much more!</p>
             </li>
           </ul>
-          <form id="form" action="#">
-            <label for="email">Email address</label>
-            <span class="form__error">Valid email required</span>
-            <input type="text" id="email" name="email" placeholder="email@company.com" required />
+          <form id="form" class="form" action="#">
+            <div class="form__email">
+              <label for="email">Email address</label>
+              <span class="form__error-msg">Valid email required</span>
+            </div>
+            <input class="form__input" type="text" id="email" name="email" placeholder="email@company.com" required />
             <button class="form__submit">Subscribe to monthly newsletter</button>
           </form>
         </div>
