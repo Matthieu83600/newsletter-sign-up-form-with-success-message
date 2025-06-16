@@ -84,7 +84,6 @@ main {
 .form__error-msg {
   color: var(--red);
   font-size: var(--fs-12);
-  display: none;
 }
 .form__input {
   border-radius: 8px;
@@ -99,7 +98,7 @@ main {
   border: 1px solid var(--blue-800);
   color: var(--blue-800);
 }
-.form__input--error:focus {
+.form__input--error {
   outline: none;
   border: 1px solid var(--red);
   color: var(--red);
