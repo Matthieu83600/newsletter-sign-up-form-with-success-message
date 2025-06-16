@@ -32,6 +32,7 @@ main {
   display: grid;
   place-items: center;
   min-height: 100vh;
+  margin-bottom: 50px;
 }
 .newsletter {
   background-color: var(--white);
@@ -148,5 +149,18 @@ main {
     display: block;
     border-radius: 32px;
     width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .newsletter {
+    border-radius: 0;
+    padding: 0;
+    gap: 0;
+  }
+  .newsletter__img--mobile {
+    border-radius: 0;
+  }
+  .newsletter__form {
+    padding: 24px;
   }
 }
