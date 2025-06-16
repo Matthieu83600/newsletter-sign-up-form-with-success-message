@@ -115,9 +115,8 @@ main {
   background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
   cursor: pointer;
 }
-.newsletter__img {
+.newsletter__img--desktop {
   border-radius: 32px;
-  overflow: hidden;
 }
 .newsletter__img--mobile {
   display: none;
@@ -131,4 +130,23 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (max-width: 1024px) {
+  .newsletter {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 40px;
+  }
+  .newsletter__form {
+    gap: 24px;
+    margin-block: 0;
+  }
+  .newsletter__img--desktop {
+    display: none;
+  }
+  .newsletter__img--mobile {
+    display: block;
+    border-radius: 32px;
+    width: 100%;
+  }
 }
