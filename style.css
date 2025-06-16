@@ -1,0 +1,39 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Colors */
+  --red: hsl(4, 100%, 67%);
+  --blue-800: hsl(234, 29%, 20%);
+  --blue-700: hsl(235, 18%, 26%);
+  --grey: hsl(0, 0%, 58%);
+  --white: hsl(0, 0%, 100%);
+  /* Font */
+  --font-family: "Roboto", sans-serif;
+  --fs-16: 16px;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+body {
+  font-family: var(--font-family);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
+  background-color: var(--blue-800);
+}
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
